@@ -21,6 +21,7 @@ void BMIproccess(){
 
     //adding categories for the BMI
     cout << "Category: ";
-    if (result = < 18.50) << "Underweight" << endl;
-    else if (result = < 25) << "Ideal (Yi Sang approves)" endl;
+    if (result = < 18.50) cout << "Underweight (eat more laaa)" << endl;
+    else if (result = < 25) cout << "Ideal (Yi Sang approves)" << endl;
+    else if (result = < 30) cout << "Overweight (You Fat F($*# Go lose some weight)" << endl;
 }
