@@ -18,4 +18,8 @@ void BMIproccess(){
 
     //convert cm to meters
     height = height / 100;
+
+    //adding categories for the BMI
+    cout << "Category: ";
+    
 }
