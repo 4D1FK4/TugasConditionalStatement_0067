@@ -7,3 +7,15 @@ float countBMI(float m, float kg){
     return kg / (m *m);
 }
 
+void BMIproccess(){
+    float weight, height, result;
+
+    cout << "//BMI CALCULATOR//" << endl;
+    cout << "Insert Weight (Kg)";
+    cin >> weight;
+    cout << "Insert Height (cm)";
+    cin >> height;
+
+    //convert cm to meters
+    height = height / 100;
+}
