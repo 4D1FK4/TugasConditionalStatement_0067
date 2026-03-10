@@ -11,20 +11,29 @@ void BMIproccess(){
     float weight, height, result;
 
     cout << "//BMI CALCULATOR//" << endl;
-    cout << "Insert Weight (Kg)";
+    cout << "Insert Weight (Kg) ";
     cin >> weight;
-    cout << "Insert Height (cm)";
+    cout << "Insert Height (cm) ";
     cin >> height;
 
     //convert cm to meters
     height = height / 100;
 
+    result = countBMI(height, weight);
+
+    cout << fixed << setprecision(2);
+    cout << "Yo BMI is: " << result << endl;
+
     //adding categories for the BMI
     cout << "Category: ";
-    if (result = < 18.50) cout << "Underweight (eat more laaa)" << endl;
-    else if (result = < 25) cout << "Ideal (Yi Sang approves)" << endl;
-    else if (result = < 30) cout << "Overweight (You Fat F($*# Go lose some weight)" << endl;
-    else cout << "Obese" << endl;
+    if (result <= 18.50) 
+        cout << "Underweight (eat more laaa)" << endl;
+    else if (result <= 25) 
+        cout << "Ideal (Yi Sang approves)" << endl;
+    else if (result <= 30) 
+        cout << "Overweight (You Fat F($*# Go lose some weight)" << endl;
+    else 
+        cout << "Obese (Absolute Fat F*&#)" << endl;
 }
 
 int main() {
